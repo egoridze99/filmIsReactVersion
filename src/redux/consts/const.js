@@ -1,0 +1,3 @@
+export const TOGGLE_PRELOADER = 'TOGGLE_PRELOADER';
+export const TOGGLE_MENU = 'TOGGLE_MENU';
+

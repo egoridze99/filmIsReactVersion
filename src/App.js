@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Preloader from './components/Preloader/Preloader'
+import HeaderContainer from './components/Header/HeaderContainer';
+import Hero from './components/Hero/Hero';
+
+import './index.scss';
+
+
+function App(props) {
+
+  const {isLoaded} = props;
+
+  const content = <>
+    <HeaderContainer />
+    <div className="wrapper">
+      <Hero />
     </div>
+  </>
+
+  return (
+    <>
+      {!isLoaded ? <Preloader></Preloader> : content}
+    </>
   );
 }
 

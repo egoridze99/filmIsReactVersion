@@ -1,0 +1,111 @@
+$linkcolor: #d0b074;
+$semiTitleColor: #151515;
+$linkcolorHover: #917b51;
+
+.hero {
+    background-image: url("./assets/main-bg.jpg");
+    background-color: #000;
+
+    @media screen and (max-width: 900px) {
+        background-image: url('./assets/main-bg__mobile.jpg');
+    }
+
+    .overflow {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        will-change: background-color;
+        transition: background-color .3s;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content__main-title {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 70px;
+        margin-bottom: 10px;
+        pointer-events: none;
+
+        @media screen and (max-width: 900px) {
+            & {
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            & {
+                font-size: 34px;
+            }
+        }
+    }
+
+    .content__title {
+        font-weight: 300;
+        font-size: 60px;
+        color: #fff;
+        pointer-events: none;
+
+        @media screen and (max-width: 900px) {
+            & {
+                font-size: 40px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            & {
+                font-size: 29px;
+            }
+        }
+    }
+
+    .content__button {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        background-color: $linkcolor;
+        border: none;
+        border-radius: 25px;
+        padding: 0 30px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.7);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9em;
+        text-align: center;
+        margin: 20px 0;
+        transition: all 0.2s ease 0s;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #d0b074;
+        }
+
+        @media screen and (max-width: 900px) {
+            & {
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            & {
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}
