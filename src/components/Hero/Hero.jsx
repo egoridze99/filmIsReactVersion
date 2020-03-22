@@ -11,11 +11,11 @@ const Hero = props => {
                 </h1>
                 <h2 className="content__title animated fadeIn">Film is...</h2>
                 <button
-                    href="#"
                     className="content__button animated fadeIn"
                     id="order"
+                    onClick = {props.setModalVisible}
                 >
-                    Забронировать зал
+                    Обратный звонок
                 </button>
             </div>
             <div className="overflow"></div>
