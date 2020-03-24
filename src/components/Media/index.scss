@@ -1,0 +1,34 @@
+$linkcolor: #d0b074;
+$semiTitleColor: #151515;
+$linkcolorHover: #917b51;
+
+.sixth-section {
+    background-image: linear-gradient(to bottom, #141414, #101010, #0b0b0b, #060606, #000000);
+    padding: 50px 10px;
+
+    .wibes__list {
+        text-align: center;
+
+        .wibes__item {
+            display: inline-block;
+            padding: 5px;
+            margin: 0 10px;
+            
+            &:hover {
+                .svg {
+                    fill: #000;
+                    background-color: $linkcolor;
+                }
+            }
+
+            .svg {
+                width: 40px;
+                height: 40px;
+                border: 1px solid $linkcolor;
+                padding: 7px;
+                transition: all 0.5s ease;
+                fill: #fff;
+            }
+        }
+    }
+}

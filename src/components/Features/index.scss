@@ -1,0 +1,63 @@
+.fourth-section {
+    background-image: linear-gradient(to right bottom, #4a4242, #383233, #272424, #171516, #000000);
+    height: unset!important;
+
+
+    &__lists-wrapper {
+        max-width: 1000px;
+        margin: 30px auto 0;
+        display: flex;
+        padding: 50px;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1000px) {
+            padding: 20px 0;
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            padding: 20px 0px 20px 40px;
+            align-items: flex-start;
+        }
+
+        @media screen and (max-width: 530px) {
+            padding-left: 20px;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding-left: 10px;
+        }
+
+        ul {
+            list-style: none;
+            li {
+                padding: 20px;
+                
+                &:before {
+                    content: url('./assets/arrow-list.png');
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 18px;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                    @media screen and (max-width: 530px) {
+                        font-size: 15px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

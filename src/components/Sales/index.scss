@@ -1,0 +1,35 @@
+.sales-section {
+    padding: 70px;
+    background-image: linear-gradient(to bottom, #141414, #101010, #0b0b0b, #060606, #000000);
+    
+    &__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+
+        .wrapper__container {
+            margin-top: 20px;
+            padding: 10px;
+
+            .container__title {
+                text-align: center;
+                font-size: 23px;
+                color: #fff;
+                font-weight: 300;
+                font-style: italic;
+            }
+
+            .container__text {
+                margin-top: 15px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 25px;
+                pointer-events: none;
+                text-align: center;
+                @media screen and (max-width: 600px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

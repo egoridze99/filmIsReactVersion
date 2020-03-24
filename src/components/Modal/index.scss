@@ -9,10 +9,6 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
 
-    &-hide {
-        display: none;
-    }
-
     &-visible {
         display: flex;
     }
@@ -33,7 +29,16 @@
             color: #000000;
             width: 35px;
             height: 35px;
-            
+            border: none;
+            background: transparent;
+            outline: none;
+
+            cursor: pointer;
+
+            &:active {
+                outline: none;
+            }
+
             @media screen and (max-width: 350px) {
                top: -35px;
                right: -13px; 

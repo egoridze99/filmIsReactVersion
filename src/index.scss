@@ -64,3 +64,11 @@ body {
         font-size: 13px;
     }
 }
+
+[data-scrolly-down] {
+    opacity: 0;
+}
+
+.wibes__list {
+    opacity: 1;
+}
