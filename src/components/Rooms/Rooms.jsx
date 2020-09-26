@@ -17,8 +17,13 @@ import gav3 from './assets/gav-3.png';
 import gav4 from './assets/gav-4.png';
 import gav5 from './assets/gav-5.png';
 
+import eds1 from './assets/eds_1.png';
+import eds2 from './assets/eds_2.png';
+import eds3 from './assets/eds_3.png';
+
+
 const Rooms = props => {
-    const totalSlide = 2;
+    const totalSlide = 3;
 
     const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -39,11 +44,11 @@ const Rooms = props => {
         <section className="section second-section">
           <a id="rooms"></a>
           <h2 className="section__title" data-scrolly-down="fadeInDownBig">Наши кинозалы</h2>
-          <p className="section__phrase" data-scrolly-down="fadeIn">Наш кинотеатр готов порадовать вас двумя замечательными кинозалами</p>
+          <p className="section__phrase" data-scrolly-down="fadeIn">Наш кинотеатр готов порадовать вас тремя замечательными кинозалами</p>
           <p className="next arrow" onClick = {() => setCurrentSlide(currentSlide + 1)}></p>
-          <p className="prev arrow" onClick = {() => setCurrentSlide(currentSlide + 1)}></p>
+          <p className="prev arrow" onClick = {() => {setCurrentSlide(currentSlide - 1); console.log(currentSlide);}}></p>
           <div className="slider" data-scrolly-down="fadeIn">
-            <div className={classnames("slide", (currentSlide + 1) % totalSlide === 0 ? "showing" : "")}>
+            <div className={classnames("slide", Math.abs(currentSlide - 1) % totalSlide === 0 ? "showing" : "")}>
               <div className="slide__wrapper">
                 <div className="swiper-container">
                   <div className="swiper-wrapper">
@@ -83,7 +88,7 @@ const Rooms = props => {
                 </div>
               </div>
               </div>
-            <div className={classnames("slide", (currentSlide + 1) % totalSlide === 1 ? "showing" : "")}>
+            <div className={classnames("slide", Math.abs(currentSlide - 1) % totalSlide === 1 ? "showing" : "")}>
               <div className="slide__wrapper">
                 <div className="swiper-container">
                   <div className="swiper-wrapper">
@@ -115,6 +120,41 @@ const Rooms = props => {
                     </li>
                     <li className="list__item">
                       <p className="item__positon">Вместимость зала 12-15 человек</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+              <div className={classnames("slide", Math.abs(currentSlide - 1) % totalSlide === 2 ? "showing" : "")}>
+              <div className="slide__wrapper">
+                <div className="swiper-container">
+                  <div className="swiper-wrapper">
+                    <img className="swiper-slide" src={eds1} alt="Кинотеатр Чита"/>
+                    <img className="swiper-slide" src={eds2} alt="Частный кинотеатр" />
+                    <img className="swiper-slide" src={eds3} alt="Кинотеатр Чита" />
+                  </div>
+                  <div className="swiper-pagination"></div>
+                </div>
+                <div className="slide__information">
+                  <h3 className="information__title">Эдисон</h3>
+                  <p className="information__phrase">
+                    «Уютно, как дома»
+                  </p>
+                  <p className="information__list-title">
+                    Преимущества зала
+                  </p>
+                  <ul className="information__list">
+                    <li className="list__item">
+                      <p className="item__positon">Изогнутый экран</p>
+                    </li>
+                    <li className="list__item">
+                      <p className="item__positon">Караоке</p>
+                    </li>
+                    <li className="list__item">
+                      <p className="item__positon">Лаконичный дизайн</p>
+                    </li>
+                    <li className="list__item">
+                      <p className="item__positon">Вместимость зала 6-10 человек</p>
                     </li>
                   </ul>
                 </div>
