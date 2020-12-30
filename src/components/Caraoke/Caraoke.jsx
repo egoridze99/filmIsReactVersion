@@ -4,7 +4,7 @@ import simpleParallax from 'simple-parallax-js';
 
 import './index.scss'
 
-import img from './assets/caraoke.jpg'
+import img from './assets/caraoke.JPG'
 
 const Caraoke = () => {
     useEffect(() => {

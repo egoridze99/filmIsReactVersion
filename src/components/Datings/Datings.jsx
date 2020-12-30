@@ -3,11 +3,11 @@ import simpleParallax from 'simple-parallax-js';
 
 import './index.scss'
 
-import dating1 from './assets/dating_1.jpg';
-import dating2 from './assets/dating_2.jpg';
-import dating3 from './assets/dating_3.jpg';
-import dating4 from './assets/dating_4.jpg';
-import dating5 from './assets/dating_5.jpg';
+import dating1 from './assets/dating_1.JPG';
+import dating2 from './assets/dating_2.JPG';
+import dating3 from './assets/dating_3.JPG';
+import dating4 from './assets/dating_4.JPG';
+import dating5 from './assets/dating_5.JPG';
 
 const Datings = props => {
     useEffect(() => {
