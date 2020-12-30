@@ -20,7 +20,7 @@ const Prices = props => {
                     Для двоих
                   </h3>
                   <p className="container__price">
-                    500&#8381;
+                    600&#8381;
                   </p>
                   <p className="container__info">
                     (За двоих)
@@ -31,7 +31,7 @@ const Prices = props => {
                     Для компаний
                   </h3>
                   <p className="container__price">
-                    200&#8381;
+                    250&#8381;
                   </p>
                   <p className="container__info">
                     (С человека)
@@ -49,7 +49,7 @@ const Prices = props => {
                     Для двоих
                   </h3>
                   <p className="container__price">
-                    700&#8381;
+                    800&#8381;
                   </p>
                   <p className="container__info">
                     (За двоих)
@@ -60,7 +60,7 @@ const Prices = props => {
                     Для компаний
                   </h3>
                   <p className="container__price">
-                    250&#8381;
+                    350&#8381;
                   </p>
                   <p className="container__info">
                     (С человека)

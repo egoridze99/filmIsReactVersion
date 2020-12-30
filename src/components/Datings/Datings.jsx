@@ -44,7 +44,7 @@ const Datings = props => {
                     <p className="item__par">Фильм на выбор</p>
                   </li>
                   <li className="info-list__item">
-                    <p className="item__par"><span className="item__sum">Цена: </span>1300&#8381;</p>
+                    <p className="item__par"><span className="item__sum">Цена: </span>1500&#8381;</p>
                   </li>
                 </ul>
               </div>
@@ -74,7 +74,7 @@ const Datings = props => {
                     <p className="item__par">Фильм на выбор</p>
                   </li>
                   <li className="info-list__item">
-                    <p className="item__par"><span className="item__sum">Цена: </span>2000&#8381;</p>
+                    <p className="item__par"><span className="item__sum">Цена: </span>2300&#8381;</p>
                   </li>
                 </ul>
               </div>
@@ -104,7 +104,7 @@ const Datings = props => {
                     <p className="item__par">Фильм на выбор</p>
                   </li>
                   <li className="info-list__item">
-                    <p className="item__par"><span className="item__sum">Цена: </span>2800&#8381;</p>
+                    <p className="item__par"><span className="item__sum">Цена: </span>3000&#8381;</p>
                   </li>
                 </ul>
               </div>
@@ -137,7 +137,7 @@ const Datings = props => {
                     <p className="item__par">Фильм на выбор</p>
                   </li>
                   <li className="info-list__item">
-                    <p className="item__par"><span className="item__sum">Цена: </span>3050&#8381;</p>
+                    <p className="item__par"><span className="item__sum">Цена: </span>3300&#8381;</p>
                   </li>
                 </ul>
               </div>
@@ -173,7 +173,7 @@ const Datings = props => {
                     <p className="item__par">Фильм на выбор</p>
                   </li>
                   <li className="info-list__item">
-                    <p className="item__par"><span className="item__sum">Цена: </span>5450&#8381;</p>
+                    <p className="item__par"><span className="item__sum">Цена: </span>5800/6150&#8381;</p>
                   </li>
                 </ul>
               </div>

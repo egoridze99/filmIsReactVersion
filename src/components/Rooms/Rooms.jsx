@@ -5,22 +5,20 @@ import classnames from 'classnames';
 import './index.scss';
 import 'swiper/swiper.scss';
 
-import abs1 from './assets/abs_1.jpg';
-import abs2 from './assets/abs_2.jpg';
-import abs3 from './assets/abs_3.jpg';
-import abs4 from './assets/abs_4.jpg';
-import abs5 from './assets/abs_5.jpg';
+import abs1 from './assets/abs_1.JPG';
+import abs2 from './assets/abs_2.JPG';
+import abs3 from './assets/abs_3.JPG';
+import abs4 from './assets/abs_4.JPG';
 
-import gav1 from './assets/gav_1.png';
-import gav2 from './assets/gav_2.png';
-import gav3 from './assets/gav-3.png';
-import gav4 from './assets/gav-4.png';
-import gav5 from './assets/gav-5.png';
+import gav1 from './assets/gav_1.jpg';
+import gav2 from './assets/gav_2.jpg';
+import gav3 from './assets/gav_3.jpg';
+import gav4 from './assets/gav_4.jpg';
 
-import eds1 from './assets/eds_1.png';
-import eds2 from './assets/eds_2.png';
-import eds3 from './assets/eds_3.png';
-
+import eds1 from './assets/eds_1.JPG';
+import eds2 from './assets/eds_2.JPG';
+import eds3 from './assets/eds_3.JPG';
+import eds4 from './assets/eds_4.JPG';
 
 const Rooms = props => {
     const totalSlide = 3;
@@ -56,7 +54,6 @@ const Rooms = props => {
                     <img className="swiper-slide" src={abs2} alt="Частный кинотеатр" />
                     <img className="swiper-slide" src={abs3} alt="Кинотеатр Чита" />
                     <img className="swiper-slide" src={abs4} alt="Кинотеатр Чита" />
-                    <img className="swiper-slide" src={abs5} alt="Кинотеатр Чита" />
                   </div>
                   <div className="swiper-pagination"></div>
                 </div>
@@ -96,7 +93,6 @@ const Rooms = props => {
                     <img className="swiper-slide" src={gav2} alt="Частный кинотеатр" />
                     <img className="swiper-slide" src={gav3} alt="Кинотеатр Чита" />
                     <img className="swiper-slide" src={gav4} alt="Кинотеатр Чита" />
-                    <img className="swiper-slide" src={gav5} alt="Кинотеатр Чита" />
                   </div>
                   <div className="swiper-pagination"></div>
                 </div>
@@ -132,6 +128,7 @@ const Rooms = props => {
                     <img className="swiper-slide" src={eds1} alt="Кинотеатр Чита"/>
                     <img className="swiper-slide" src={eds2} alt="Частный кинотеатр" />
                     <img className="swiper-slide" src={eds3} alt="Кинотеатр Чита" />
+                    <img className="swiper-slide" src={eds4} alt="Кинотеатр Чита" />
                   </div>
                   <div className="swiper-pagination"></div>
                 </div>
