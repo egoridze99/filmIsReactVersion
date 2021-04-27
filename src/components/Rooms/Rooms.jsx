@@ -5,23 +5,29 @@ import classnames from 'classnames';
 import './index.scss';
 import 'swiper/swiper.scss';
 
-import abs1 from './assets/abs_1.JPG';
-import abs2 from './assets/abs_2.JPG';
-import abs3 from './assets/abs_3.JPG';
-import abs4 from './assets/abs_4.JPG';
+import abs1 from './assets/abs_1.jpg';
+import abs2 from './assets/abs_2.jpg';
+import abs3 from './assets/abs_3.jpg';
+import abs4 from './assets/abs_4.jpg';
 
 import gav1 from './assets/gav_1.jpg';
 import gav2 from './assets/gav_2.jpg';
 import gav3 from './assets/gav_3.jpg';
 import gav4 from './assets/gav_4.jpg';
 
-import eds1 from './assets/eds_1.JPG';
+import eds1 from './assets/eds_1.jpg';
 import eds2 from './assets/eds_2.JPG';
 import eds3 from './assets/eds_3.JPG';
 import eds4 from './assets/eds_4.JPG';
 
+import tron1 from "./assets/tron_1.JPG"
+import tron2 from "./assets/tron_2.JPG"
+import tron3 from "./assets/tron_3.JPG"
+import tron4 from "./assets/tron_4.JPG"
+import tron5 from "./assets/tron_5.JPG"
+
 const Rooms = props => {
-    const totalSlide = 3;
+    const totalSlide = 4;
 
     const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -152,6 +158,43 @@ const Rooms = props => {
                     </li>
                     <li className="list__item">
                       <p className="item__positon">Вместимость зала 6-10 человек</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+              <div className={classnames("slide", Math.abs(currentSlide - 1) % totalSlide === 3 ? "showing" : "")}>
+              <div className="slide__wrapper">
+                <div className="swiper-container">
+                  <div className="swiper-wrapper">
+                    <img className="swiper-slide" src={tron1} alt="Кинотеатр Чита"/>
+                    <img className="swiper-slide" src={tron2} alt="Частный кинотеатр" />
+                    <img className="swiper-slide" src={tron3} alt="Кинотеатр Чита" />
+                    <img className="swiper-slide" src={tron4} alt="Кинотеатр Чита" />
+                    <img className="swiper-slide" src={tron5} alt="Кинотеатр Чита" />
+                  </div>
+                  <div className="swiper-pagination"></div>
+                </div>
+                <div className="slide__information">
+                  <h3 className="information__title">ТРОН</h3>
+                  <p className="information__phrase">
+                    «Вы никогда не будете настолько взрослыми, чтобы не играть в игры...»
+                  </p>
+                  <p className="information__list-title">
+                    Преимущества зала
+                  </p>
+                  <ul className="information__list">
+                    <li className="list__item">
+                      <p className="item__positon">PS5 и игры нового поколения</p>
+                    </li>
+                    <li className="list__item">
+                      <p className="item__positon">Большой выбор настольных игр</p>
+                    </li>
+                    <li className="list__item">
+                      <p className="item__positon">Зал идеально подойдёт для компании и для просмотра фильмов вдвоём</p>
+                    </li>
+                    <li className="list__item">
+                      <p className="item__positon">Вместимость зала до 8 человек</p>
                     </li>
                   </ul>
                 </div>

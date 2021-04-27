@@ -3,6 +3,8 @@ import React from 'react';
 import './index.scss';
 
 const Sales = props => {
+    console.log(props.sales)
+
     return (  
         <section className="sales-section">
             <h2 className="section__title" data-scrolly-down="fadeInDownBig">
