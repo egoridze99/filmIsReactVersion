@@ -3,71 +3,83 @@ $semiTitleColor: #151515;
 $linkcolorHover: #917b51;
 
 .price-section {
-    $self : &;
+  $self: &;
 
-    background-image: linear-gradient(to right bottom, #4a4242, #383233, #272424, #171516, #000000);
-    padding: 70px;
+  background-image: linear-gradient(
+    to right bottom,
+    #4a4242,
+    #383233,
+    #272424,
+    #171516,
+    #000000
+  );
+  padding: 70px;
 
-    @media screen and (max-width: 550px) {
-        padding: 20px;
-    }
+  @media screen and (max-width: 550px) {
+    padding: 20px;
+  }
 
-    &__container {
-        margin: 30px auto 0;
+  &__container {
+    margin: 30px auto 0;
 
-        #{$self}__wrapper {
-            max-width: 550px;
-            margin: auto;
+    #{$self}__wrapper {
+      max-width: 550px;
+      margin: auto;
 
-            &:first-child {
-                margin-bottom: 30px;
-            }
+      &:first-child {
+        margin-bottom: 30px;
+      }
 
-            #{$self}__title {
-                text-align: center;
-                color: #fff;
-                font-weight: 700;
-                font-size: 25px;
+      #{$self}__title {
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 25px;
 
-                
-                @media screen and (max-width: 550px) {
-                    font-size: 20px;
-                }
-            }
-
-            .wrapper__container {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 25px;
-
-                .container__title {
-                    color: #fff;
-                    font-weight: 700;
-                    font-size: 30px;
-
-                    @media screen and (max-width: 550px) {
-                        font-size: 18px;
-                    }
-                }
-
-                .container__price {
-                    color: $linkcolor;
-                    font-size: 35px;
-                    text-align: center;
-                    margin-bottom: 10px;
-
-                    @media screen and (max-width: 550px) {
-                        font-size: 23px;
-                        margin-bottom: 5px;
-                    }
-                }
-
-                .container__info {
-                    color: #fff;
-                    font-weight: 300;
-                    text-align: center;
-                }
-            }
+        @media screen and (max-width: 550px) {
+          font-size: 20px;
         }
+      }
+
+      .wrapper__container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+
+        .container__title {
+          color: #fff;
+          font-weight: 700;
+          font-size: 30px;
+
+          @media screen and (max-width: 550px) {
+            font-size: 18px;
+          }
+        }
+
+        .container__price {
+          color: $linkcolor;
+          font-size: 35px;
+          text-align: center;
+          margin-bottom: 10px;
+
+          @media screen and (max-width: 550px) {
+            font-size: 23px;
+            margin-bottom: 5px;
+          }
+        }
+
+        .container__info {
+          color: #fff;
+          font-weight: 300;
+          text-align: center;
+        }
+      }
     }
+    .container__price-info {
+      text-align: center;
+      color: #fff;
+      margin-top: 20px;
+      font-weight: 300;
+    }
+  }
 }
