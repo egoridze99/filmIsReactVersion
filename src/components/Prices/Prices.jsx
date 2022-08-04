@@ -15,12 +15,12 @@ const Prices = (props) => {
           <div className="wrapper__container">
             <div className="container__solo">
               <h3 className="container__title">Для двоих</h3>
-              <p className="container__price">600&#8381;</p>
+              <p className="container__price">800&#8381;</p>
               <p className="container__info">(За двоих)</p>
             </div>
             <div className="container__company">
               <h3 className="container__title">Для компаний</h3>
-              <p className="container__price">250&#8381;</p>
+              <p className="container__price">350&#8381;</p>
               <p className="container__info">(С человека)</p>
             </div>
           </div>
@@ -30,12 +30,12 @@ const Prices = (props) => {
           <div className="wrapper__container">
             <div className="container__solo">
               <h3 className="container__title">Для двоих</h3>
-              <p className="container__price">800&#8381;</p>
+              <p className="container__price">1000&#8381;</p>
               <p className="container__info">(За двоих)</p>
             </div>
             <div className="container__company">
               <h3 className="container__title">Для компаний</h3>
-              <p className="container__price">350&#8381;</p>
+              <p className="container__price">450&#8381;</p>
               <p className="container__info">(С человека)</p>
             </div>
           </div>
