@@ -32,7 +32,7 @@ function App(props) {
             <div className='wrapper'>
                 <a id='main'></a>
                 <HeroContainer />
-                <Rooms />
+                {/* <Rooms /> */}
                 <Prices />
                 <Datings />
                 <Features />
